@@ -3,9 +3,6 @@ import { galleryItems } from './gallery-items.js';
 
 const galleryWrap = document.querySelector('.gallery');
 
-// console.log(galleryItems);
-
-
 function createGallery() {
 	const markup = galleryItems.map(item => `
 		<div class="gallery__item">
@@ -35,7 +32,7 @@ function onImageClick(e) {
 	}
 
 	const instance = basicLightbox.create(`
-      <img src="${e.target.dataset.source}" width="800" height="600">
+		<img src="${e.target.dataset.source}" width="800" height="600">
 	`);
 
 	instance.show();
